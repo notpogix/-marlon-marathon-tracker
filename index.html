@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlon's 28-Day Marathon | Twitch Stream Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">MARLON'S 28-DAY MARATHON</h1>
+            <p class="hero-subtitle">October 27 - November 24, 2025</p>
+            
+            <div class="live-status" id="liveStatus">
+                <span class="live-dot"></span>
+                <span class="live-text">LIVE</span>
+            </div>
+            
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span class="progress-text" id="progressText">0%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS OVERVIEW -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" data-target="15420">0</div>
+                    <div class="stat-label">Total Subscribers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-target="387">0</div>
+                    <div class="stat-label">Marathon Subs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">❤️</div>
+                    <div class="stat-number" data-target="1205">0</div>
+                    <div class="stat-label">Marathon Followers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💎</div>
+                    <div class="stat-number" data-target="45680">0</div>
+                    <div class="stat-label">Total Bits</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERBOARDS SECTION -->
+    <section class="leaderboards-section">
+        <div class="container">
+            <h2 class="section-title">Marathon Leaderboards</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="subGifters">Top Sub Gifters</button>
+                <button class="tab-btn" data-tab="bitDonors">Top Bit Donors</button>
+                <button class="tab-btn" data-tab="chatters">Top Chatters</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="leaderboard active" id="subGifters">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="leaderboard" id="bitDonors">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="leaderboard" id="chatters">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAILY BREAKDOWN SECTION -->
+    <section class="daily-section">
+        <div class="container">
+            <h2 class="section-title">Daily Breakdown</h2>
+            
+            <div class="day-selector" id="daySelector">
+                <!-- Populated by JavaScript -->
+            </div>
+            
+            <div class="daily-leaderboards" id="dailyLeaderboards">
+                <div class="daily-board">
+                    <h3 class="daily-board-title">Top Sub Gifters</h3>
+                    <div class="leaderboard-mini" id="dailySubGifters">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="daily-board">
+                    <h3 class="daily-board-title">Top Bit Donors</h3>
+                    <div class="leaderboard-mini" id="dailyBitDonors">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="daily-board">
+                    <h3 class="daily-board-title">Top Chatters</h3>
+                    <div class="leaderboard-mini" id="dailyChatters">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>MADE BY <a href="https://www.twitch.tv/0pogix" target="_blank" class="footer-link">POGIX</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
