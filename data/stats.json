@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-01-23T20:45:12.967990+00:00",
+  "lastUpdated": "2026-01-23T21:13:20.066032+00:00",
   "marathonStart": "2025-10-27T00:00:00Z",
   "marathonEnd": "2025-11-24T00:00:00Z",
   "currentDay": 28,
-  "isLive": false,
+  "isLive": true,
   "stats": {
-    "totalFollowers": 1748733,
+    "totalFollowers": 1748888,
     "marathonFollowers": 0,
-    "marathonStartFollowers": 1748733,
+    "marathonStartFollowers": 1748888,
     "totalSubs": 0,
     "marathonSubs": 0,
     "totalBits": 0
